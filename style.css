@@ -1,9 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+:root {
+    --bg-color: #13131F;
+    --white-color: #F9F9F9;
+    --purple-color: #8257E6;
+
+    --font-destak: "Poppins";
+    --font-normal: "DM sans";
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: 0;
 }
 
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-normal);
+    color: var(--white-color);
+}
+
+
+header {
+    padding: 15px;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 200px;
+    align-items: center;
+}
+
+main {
+    border-top: 1px solid #9038E5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 20px;
+   
+}
+
+#principal-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#apresentacao {
+    font-family: var(--font-destak);
+    font-weight: normal;
+    font-size: 30px;
+}
+
+#profissao {
+    color: #828282;
+    font-size: 0.8em;
+}
+
+#btn {
+    display: flex;
+    gap: 10px
+}
+
+.botoes {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px black;
+    padding: 5px;
+    background-image: linear-gradient(to right, rgb(255, 0, 255), purple);
+    color: var(--white-color);
+    font-size: 13px;
+    font-weight: 200;
+}
+
+#nome {
+    color: var(--purple-color);
+}
+
+#avatar {
+    max-width: 40%;
+}
+
+
+
 #menu-icon {
-    width: 30px;
+    width: 20px;
 }
